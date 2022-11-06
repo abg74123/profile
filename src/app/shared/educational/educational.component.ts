@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
+  selector: 'app-educational',
+  templateUrl: './educational.component.html',
   styles: [
   ]
 })
-export class ProfileComponent implements OnInit {
+export class EducationalComponent implements OnInit {
 
   constructor() { }
 
@@ -14,5 +14,3 @@ export class ProfileComponent implements OnInit {
   }
 
 }
-
-

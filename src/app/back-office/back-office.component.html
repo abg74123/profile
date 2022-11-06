@@ -1,1 +1,12 @@
-<p>back-office works!</p>
+<div class="flex flex-col gap-5">
+    <!-- My Infomation -->
+<app-my-info [edit]="true"></app-my-info>
+    <!-- My Project -->
+<app-my-project></app-my-project>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <!-- Experience -->
+    <app-work-experience></app-work-experience>
+    <!-- Experience -->
+    <app-educational></app-educational>
+</div>
+</div>

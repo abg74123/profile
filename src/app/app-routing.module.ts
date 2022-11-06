@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BackOfficeComponent } from './back-office/back-office.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: 'dashboard', loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule) },
-  { path: 'back-office', loadChildren: () => import('./back-office/back-office.module').then(m => m.BackOfficeModule) },
+  { path: 'dashboard', component:ProfileComponent },
+  { path: 'back-office', component:BackOfficeComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
