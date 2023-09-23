@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
-import { DialogAboutMeComponent } from './dialog-about-me/dialog-about-me.component';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
@@ -24,7 +23,6 @@ const material = [
   MatNativeDateModule
 ]
 const components = [
-  DialogAboutMeComponent,
   MyInfoComponent,
   MyProjectComponent,
   WorkExperienceComponent,
