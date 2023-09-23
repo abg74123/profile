@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-work-experience',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class WorkExperienceComponent implements OnInit {
+
+  @Input() from = {}
 
   htmlText = `
   จัดทำ แก้ไข พัฒนาเว็บไซต์ ตาม requirements และทำตาม design ที่ได้รับมอบหมาย<br>
